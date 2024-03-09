@@ -23,6 +23,34 @@ To get started with the app, follow these steps:
 6. Run the app with the command `chainlit run app.py`.
 7. Interact with the onboarding assistant using the chat interface.
 
+## Configuration
+
+To properly start the application, you need to create a configuration file `config.py` or a `.env` file and add the necessary keys and values.
+
+### config.py
+
+Create a `config.py` file in the main directory of your application and add the following lines:
+
+\```python
+API_KEY = 'Your_API_Key'
+ANOTHER_CONFIG = 'Another_Value'
+\```
+
+Replace `'Your_API_Key'` and `'Another_Value'` with the actual values you want to use.
+
+### .env
+
+Alternatively, you can create a `.env` file in the main directory of your application and add the following lines:
+
+\```
+API_KEY=Your_API_Key
+ANOTHER_CONFIG=Another_Value
+\```
+
+Replace `Your_API_Key` and `Another_Value` with the actual values you want to use.
+
+Please note that you should not check the `config.py` or `.env` file into your Git repository to protect your sensitive data.
+
 ## Usage
 
 The onboarding assistant app is designed to be interactive. When you start the app, you will be prompted to enter your name. After that, the assistant will ask you about your position in the company. Based on your response, the assistant will provide you with relevant information and resources to help you get started.
